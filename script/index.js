@@ -100,7 +100,7 @@ function NAV_STATE(){
         icon.setAttribute("data-state","close")
         icon.querySelector("img").src="../images/icon-menu.svg"
         nav.style.transform="translateX(-100%)"
-        overlay.style.transform="translateX(100%)"
+        overlay.style.transform="translateX(100vw)"
     }
 }
 
@@ -182,19 +182,9 @@ arrow.forEach(e=>e.addEventListener("click", async function(){
                                 element.classList.remove("focused")
                             }
                         }
-                        thumb_img_container_pop[counter].classList.add("focused")
+                        thumb_img_container_pop[counter].classList.add("focused")   
                     }
 
-                    
-                    if(thumb_img_container[counter].classList.contains("focused")===false){
-                        for (let i = 0; i < thumb_img_container.length; i++) {
-                            const element = thumb_img_container[i];
-                            if(element.classList.contains("focused")){
-                                element.classList.remove("focused")
-                            }
-                        }
-                        thumb_img_container[counter].classList.add("focused")
-                    }
                 }
             }
             if(e.classList.contains("right")){
@@ -214,16 +204,6 @@ arrow.forEach(e=>e.addEventListener("click", async function(){
                         thumb_img_container_pop[counter].classList.add("focused")
                     }
                     
-
-                    if(thumb_img_container[counter].classList.contains("focused")===false){
-                        for (let i = 0; i < thumb_img_container.length; i++) {
-                            const element = thumb_img_container[i];
-                            if(element.classList.contains("focused")){
-                                element.classList.remove("focused")
-                            }
-                        }
-                        thumb_img_container[counter].classList.add("focused")
-                    }
                 }
 
             }
