@@ -433,8 +433,12 @@ strong{
 /*<==================================>
 ////////media query-desktop///////////
 <==================================>*/
-
-@media(width>700px){
+@media(width>550px){
+    :root{
+        --DESCENDENTS_LENGHT: min(550px,100%); 
+    }
+}
+@media(width>900px){
     :root{  
         --DESCENDENTS_LENGHT: min(1110px,100%); 
     }

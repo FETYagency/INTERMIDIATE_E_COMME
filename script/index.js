@@ -4,7 +4,7 @@ const PRODUCT = {
     discount:`50%`,
     old:"250.00",
 }
-const VIEW =  window.matchMedia("(width>700px)");
+const VIEW =  window.matchMedia("(width>900px)");
 document.querySelector(".CURR_PRICE").textContent += PRODUCT.current;
 document.querySelector(".discount").textContent = PRODUCT.discount;
 document.querySelector(".OLD_PRICE").textContent += PRODUCT.old;
@@ -92,13 +92,11 @@ const nav = document.querySelector(".MOBILE_NAV")
 function NAV_STATE(){
     if(icon.dataset.state==="close"){
         icon.setAttribute("data-state","open")
-        icon.querySelector("img").src="../images/icon-close.svg"
         nav.style.transform="translateX(0%)"
         overlay.style.transform="translateX(0%)"
         overlay.style.display="block"
     }else if(icon.dataset.state==="open"){
         icon.setAttribute("data-state","close")
-        icon.querySelector("img").src="../images/icon-menu.svg"
         nav.style.transform="translateX(-100%)"
         overlay.style.transform="translateX(100vw)"
     }
