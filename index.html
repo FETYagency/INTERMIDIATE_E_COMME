@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/index.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+
+
+
+  <main class="WRAPPER" style="position: relative;">
+    <div class="OVERLAY"></div>
+
+    
+    
+    <header class="WRAPPER_HEADER">
+      
+      
+      <!-- the mobile nav icon -->
+      <div class="CLICKABLE_ICON" data-state="close">
+        <img src="images/icon-menu.svg" alt="">
+      </div>
+      
+      
+      <!-- the nav links container -->
+      <nav class="MOBILE_NAV">
+        
+        <a href="#" class="nav_link">Collections</a>
+        
+        <a href="#" class="nav_link">Men</a>
+        
+        <a href="#" class="nav_link">Women</a>
+        
+        <a href="#" class="nav_link">About</a>
+        
+        <a href="#" class="nav_link">Contact</a>
+        
+        
+      </nav>
+
+      <!-- logo -->
+      <a href="#" style="display: inline-block;" class="LOGO">
+        <img src="images/logo.svg" alt="">
+      </a>
+
+      <!-- desktop nav -->
+
+      <nav class="DESK_NAV">
+        
+        <a href="#" class="nav_link">Collections</a>
+        
+        <a href="#" class="nav_link">Men</a>
+        
+        <a href="#" class="nav_link">Women</a>
+        
+        <a href="#" class="nav_link">About</a>
+        
+        <a href="#" class="nav_link">Contact</a>
+        
+        
+      </nav>
+
+      <!-- shopping cart -->
+      <div class="CART_ICON" data-state="close" data-number=0>
+        <img src="images/icon-cart.svg" alt="">
+      </div>
+
+      <!-- shopping list -->
+      <div class="SHOPPING_LIST">
+
+        <div class="LIST_HEADER">
+          <h3>Cart</h3>
+        </div>
+        
+        <div class="LIST_GOODS">
+
+        </div>
+        
+      </div>
+      
+      <!-- the profile image -->
+      <a href="#" style="display: block;" class="PROFILE">
+        <img src="images/image-avatar.png" alt="">
+      </a>
+      
+      <!-- the end of the header -->
+    </header>
+
+
+    <section class="PRODUCT_WRAPPER">
+
+      <section class="PRODUCT_GALLERY">
+        <div class="left arrows">
+          <img src="images/icon-previous.svg" alt="">
+        </div>
+        <div class="right arrows">
+          <img src="images/icon-next.svg" alt="">
+        </div>
+        <img class="product_img" src="images/image-product-1.jpg" alt="">
+        
+        <figure class="desktop_thumbs">
+          <div class="focused">
+            <img src="images/image-product-1-thumbnail.jpg" data-index="0" alt="">
+          </div>
+          <div>
+            <img src="images/image-product-2-thumbnail.jpg" data-index="1" alt="">
+          </div>
+          <div>
+            <img src="images/image-product-3-thumbnail.jpg" data-index="2" alt="">
+          </div>
+          <div>
+            <img src="images/image-product-4-thumbnail.jpg" data-index="3" alt="">
+          </div>
+        </figure>
+
+      </section>
+      
+
+
+              <div class="pop_overlay"></div>
+
+              <div class="pop_up hidden">
+                <div class="close_pop">
+                  <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="currentColor" fill-rule="evenodd"/></svg>
+                </div>
+                <div class="left arrows">
+                  <img src="images/icon-previous.svg" alt="">
+                </div>
+                <div class="right arrows">
+                  <img src="images/icon-next.svg" alt="">
+                </div>
+                <img class="product_img" src="images/image-product-1.jpg" alt="">
+                
+                <figure class="desktop_thumbs">
+                  <div class="focused">
+                    <img src="images/image-product-1-thumbnail.jpg" data-index="0" alt="">
+                  </div>
+                  <div>
+                    <img src="images/image-product-2-thumbnail.jpg" data-index="1" alt="">
+                  </div>
+                  <div>
+                    <img src="images/image-product-3-thumbnail.jpg" data-index="2" alt="">
+                  </div>
+                  <div>
+                    <img src="images/image-product-4-thumbnail.jpg" data-index="3" alt="">
+                  </div>
+                </figure>
+              </div>
+
+      <section class="PRODUCT_DESCRIPTION">
+        <p class="label">Sneaker Company</p>
+        <article>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+        </article>
+        <div class="PRICE_DETAILS">
+          <p class="CURR_PRICE">$</p>
+          <p class="discount"></p>
+          <p class="OLD_PRICE">$</p>
+        </div>
+        <div class="BUY_SECTION">
+          <div class="counter" data-counter ="0">
+            <div class="minus counter_btn">
+              <img src="images/icon-minus.svg" alt="">
+            </div>
+            <p class="units">0</p>
+            <div class="plus counter_btn">
+              <img src="images/icon-plus.svg" alt="">
+            </div>
+          </div>
+          <button type="click">Add to cart</button>
+        </div>
+      </section>
+      
+    </section>
+
+    
+    
+    
+  </main>
+  <script src="script/index.js"></script>
+  
+</body>
+</html>
