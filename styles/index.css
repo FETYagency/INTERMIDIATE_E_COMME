@@ -88,7 +88,7 @@ mobile nav code
     opacity: 0.75;
     position: absolute;
     inset: 0;
-    transform: translateX(100%);
+    transform: translateX(-100%);
 
     /* transition */
     transition: transform .4s ease;
@@ -168,7 +168,7 @@ the shopping cart
     display: grid;
 
 }
-.exist figure{
+figure{
     display: grid;
     grid-template-columns: 50px 1fr auto;
     gap: 1.07rem;
@@ -443,6 +443,10 @@ strong{
         --DESCENDENTS_LENGHT: min(1110px,100%); 
     }
 
+    body{
+        overflow-inline: hidden;
+    }
+
     .WRAPPER{
         inline-size: min(calc(1110px + 5.07rem), 100%);
         margin-inline: auto;
@@ -678,11 +682,17 @@ strong{
     display: grid;
     place-items: center;
 }
-
-.pop_overlay{
+.pop_up.pop_up.hidden + .pop_overlay{
     position: absolute;
     inset: 0 -100%;
     background: rgba(0, 0, 0, 0.587);
     z-index: 999;
     display: none;
+}
+.pop_overlay{
+    position: absolute;
+    inset:  0px -100vw;
+    background: rgba(0, 0, 0, 0.587);
+    z-index: 999;
+    display: block;
 }
